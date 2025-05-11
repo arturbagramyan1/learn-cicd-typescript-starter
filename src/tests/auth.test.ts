@@ -5,7 +5,7 @@ describe("getAPIKey", () => {
   test("should return null if the authorization header is not present", () => {
     const headers = {};
     const result = getAPIKey(headers);
-    expect(result).toBeCalled(); // to be null
+    expect(result).toBeNull(); // to be null
   });
 
   test("should return null if the authorization header does not start with 'ApiKey'", () => {
